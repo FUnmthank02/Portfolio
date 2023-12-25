@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans+SC&display=swap');
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  font-family: 'Noto Sans SC', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+	background-color: #F5F5F5;
+	border-radius: 10px;
+}
+
+body::-webkit-scrollbar
+{
+	width: 8px;
+	background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-color: #FFF;
+  background-image: -webkit-linear-gradient(top, #82b1fc 0%, #b7e7fe 100%);
+}
+
+.intro {
+  background-image: url("../images/wallpaper.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+  position: relative;
+}
+
+.intro-content {
+  background-image: linear-gradient(to top, #fbc2eb70 0%, #a6c0ee70 100%);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  width: fit-content;
+  padding: 50px 80px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  border-radius: 10px;
+}
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #44527c6e;
+}
+
+#wrap-img-about {
+  animation: ani_img_about 5s linear infinite;
+}
+
+@keyframes ani_img_about {
+  0% {
+    transform: translate(0, 0);
+  }
+  20% {
+    transform: translate(-30px, -30px);
+  }
+  40% {
+    transform: translate(-30px, 30px);
+  }
+  60% {
+    transform: translate(30px, 30px);
+  }
+  80% {
+    transform: translate(30px, -30px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+#btn_up {
+  clip-path: polygon(50% 0%, 100% 60%, 65% 60%, 65% 100%, 35% 100%, 35% 60%, 0 60%);
+  
+}
+.wrap_img_item_projects {
+  position: relative;
+}
+.overlay_projects {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top, #fbc2eb70 0%, #a6c0ee70 100%);
+  transform: translateY(100%);
+  transition: transform .3s ease-in;
+}
+
+.overlay_projects p {
+  transform: translate(-50%, -50%);
+}
+
+.vertical-alignment-helper {
+  display:table;
+  height: 100%;
+  width: 100%;
+  pointer-events:none;
+}
+.vertical-align-center {
+  /* To center vertically */
+  display: table-cell;
+  vertical-align: middle;
+  pointer-events:none;
+  max-width: 85% !important;
+}
+.modal-content {
+  /* Bootstrap sets the size of the modal in the modal-dialog class, we need to inherit it */
+  width:inherit;
+  max-width:inherit; /* For Bootstrap 4 - to avoid the modal window stretching full width */
+  height:inherit;
+  /* To center horizontally */
+  margin: 0 auto;
+  pointer-events:all;
+}
+
+#carousel_inner {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+@media screen and (max-width: 768px) {
+  body::-webkit-scrollbar {
+    display: none;
+  }
+
+  .intro-content {
+    width: 80%;
+    max-width: 80%;
+    padding: 40px 40px;
+  }
+
+  .vertical-align-center {
+    max-width: 95%;
+  }
+}
+
+
+@media screen and (max-width: 1024px) {
+  .intro-content {
+    width: 80%;
+    max-width: 80%;
+    padding: 40px 40px;
+  }
+}
