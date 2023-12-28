@@ -241,7 +241,7 @@ const listProjects = [
 
 window.addEventListener("scroll", () => {
   if (window.scrollY > 0) {
-    header.classList.add("bg-blue-500");
+    header.classList.add("bg-gray-800");
     header.classList.remove("bg-orange-50");
     header.classList.add("py-4");
     header.classList.remove("py-6");
@@ -258,7 +258,7 @@ window.addEventListener("scroll", () => {
     bar.classList.add("text-white");
     bar.classList.remove("text-black");
   } else {
-    header.classList.remove("bg-blue-500");
+    header.classList.remove("bg-gray-800");
     header.classList.add("bg-orange-50");
     header.classList.add("py-6");
     header.classList.remove("py-4");
