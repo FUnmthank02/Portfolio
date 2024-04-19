@@ -108,16 +108,8 @@ const listClouds = [
     image: "../assets/images/skills/firebase.png"
   },
   {
-    name: "Azure",
-    image: "../assets/images/skills/azure.png"
-  },
-  {
     name: "Vercel",
     image: "../assets/images/skills/vercel.png"
-  },
-  {
-    name: "Netlify",
-    image: "../assets/images/skills/netlify.png"
   },
 ]
 const listSoftSkills = [
